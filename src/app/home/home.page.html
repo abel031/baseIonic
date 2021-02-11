@@ -14,7 +14,18 @@
   </ion-header>
 
   <div id="container">
+
+    <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+      <mat-button-toggle value="bold">Bold</mat-button-toggle>
+      <mat-button-toggle value="italic">Italic</mat-button-toggle>
+      <mat-button-toggle value="underline">Underline</mat-button-toggle>
+    </mat-button-toggle-group>
+    <br>
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <hr>
+    <app-test-component></app-test-component>
+    <hr>
+    <a [routerLink]="[ '/test-page' ]">TestPage</a>
   </div>
 </ion-content>

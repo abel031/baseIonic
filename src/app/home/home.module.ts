@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { TestComponentComponent } from '../test/test-component/test-component.component';
 
 
 @NgModule({
@@ -12,8 +14,10 @@ import { HomePageRoutingModule } from './home-routing.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    MatButtonToggleModule,
   ],
-  declarations: [HomePage]
+  declarations: [HomePage,
+    TestComponentComponent]
 })
 export class HomePageModule {}
